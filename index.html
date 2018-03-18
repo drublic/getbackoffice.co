@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Backoffice - GUI-Framework based on Material UI</title>
+  <meta name="description" content="GUI-Framework based on Material UI; provides a couple of components for back-office apps (CRUD-based APIs)">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400" rel="stylesheet">
+  <link rel="stylesheet" href="/resources/index.css">
+
+  <script src="/resources/index.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="layout layout--padded-top">
+      <h1 class="logo">Backoffice</h1>
+    </div>
+  </header>
+
+  <nav class="navigation">
+    <ul class="navigation_list">
+      <li class="navigation_item">
+        <a href="#getting-started">Getting Started</a>
+      </li>
+      <li class="navigation_item">
+        <a href="https://github.com/drublic/backoffice/blob/master/README.md">Documentation</a>
+      </li>
+      <li class="navigation_item">
+        <a href="https://github.com/drublic/backoffice/">Examples</a>
+      </li>
+      <li class="navigation_item">
+        <a href="https://github.com/drublic/backoffice" class="no-hover" title="View the code on GitHub">
+          <span class="icon icon--github">GitHub</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="layout">
+    <p class="type_type-2">GUI-Framework based on Material UI; provides a couple of
+      components for back-office apps (CRUD-based APIs).</p>
+    <p class="type_type-1">Backoffice is a Framework based on Material UI, a
+      Material UI React implementation that provides a couple of components you
+      might want to use in a backoffice app. Backoffice also uses
+      <code>react-router-dom</code>, <code>material-ui-icons</code>,
+      <code>material-ui-picker</code> and some more OSS.</p>
+  </div>
+
+  <div class="layout layout--padded-top" id="getting-started">
+    <h2 class="type_type-5">Getting started</h2>
+    <p class="type_type-1">Installing If you use yarn, just run the following
+      command in your project’s root directory.</p>
+
+    <pre><code>yarn add backoffice </code></pre>
+    <p class="type_type-1">Or using npm:</p>
+    <pre><code>npm install --save backoffice</code></pre>
+
+    <h3 class="type_type-2">Using components</h3>
+    <p class="type_type-1">You need to create your own React application, that
+      takes care of routing (at least for now), handling state and so on.</p>
+
+    <p class="type_type-1">Within any of your components you can use a given
+      component by importing it to your application:</p>
+
+    <pre><code>import Menu from 'backoffice/Menu'</code></pre>
+
+    <p class="type_type-1">You can then use the component within your render
+      logic:</p>
+
+    <pre><code>const MyMenu = ({ menuData, redirectTo }) => (
+  &lt;Menu data={menuData} redirectTo={redirectTo} /&gt;
+)</code></pre>
+
+    <p class="type_type-1">You can find more information on how to use
+      Backoffice
+      <a href="https://github.com/drublic/backoffice/blob/master/README.md">
+        in the docs</a>.
+    </p>
+  </div>
+
+  <div class="footer">
+    <div class="layout">
+      <p>By Hans</p>
+    </div>
+  </div>
+
+</body>
+</html>
