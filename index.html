@@ -19,7 +19,7 @@
     </div>
   </header>
 
-  <nav class="navigation">
+  <nav class="layout layout--wide navigation">
     <ul class="navigation_list">
       <li class="navigation_item">
         <a href="#getting-started">Getting Started</a>
@@ -39,13 +39,64 @@
   </nav>
 
   <div class="layout">
-    <p class="type_type-2">GUI-Framework based on Material UI; provides a couple of
-      components for back-office apps (CRUD-based APIs).</p>
-    <p class="type_type-1">Backoffice is a Framework based on Material UI, a
-      Material UI React implementation that provides a couple of components you
-      might want to use in a backoffice app. Backoffice also uses
-      <code>react-router-dom</code>, <code>material-ui-icons</code>,
-      <code>material-ui-picker</code> and some more OSS.</p>
+    <p class="type_type-3">GUI-Framework based on Material UI; provides a couple
+      of components for back-office apps (CRUD-based APIs).</p>
+    <p class="type_type-1">Backoffice is a Framework based on
+      <a href="https://material-ui-next.com/">Material UI</a>, a
+      <a href="https://material.io/">Material Design</a> React implementation
+      that provides a couple of components you might want to use in a backoffice
+      app. Backoffice also uses <code>react-router-dom</code>,
+      <code>material-ui-icons</code>, <code>material-ui-picker</code> and some
+      more OSS.</p>
+  </div>
+
+  <div class="layout--dark layout--padded">
+    <div class="layout">
+      <h2 class="type_type-5">Examples</h2>
+    </div>
+
+    <div class="layout layout--wide grid">
+      <div class="card grid_item">
+        <div class="card_content">
+          <h3 class="type_type-2">Dashboard</h3>
+          <p class="type_type-1">
+            Dashboard-like components to display data.
+          </p>
+        </div>
+        <div class="card_actions">
+          <a href="" class="button no-hover">View Example</a>
+          <a href="" class="button no-hover">View Code</a>
+        </div>
+      </div>
+
+      <div class="card grid_item">
+        <div class="card_content">
+          <h3 class="type_type-2">Lists</h3>
+          <p class="type_type-1">
+            List data sets, make them sortable, search them and implement patch
+            actions.
+          </p>
+        </div>
+        <div class="card_actions">
+          <a href="" class="button no-hover">View Example</a>
+          <a href="" class="button no-hover">View Code</a>
+        </div>
+      </div>
+
+      <div class="card grid_item">
+        <div class="card_content">
+          <h3 class="type_type-2">Forms</h3>
+          <p class="type_type-1">
+            Easy and complex forms with a lot of data-types including date
+            fields, switches and lists.
+          </p>
+        </div>
+        <div class="card_actions">
+          <a href="" class="button no-hover">View Example</a>
+          <a href="" class="button no-hover">View Code</a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="layout layout--padded-top" id="getting-started">
@@ -57,7 +108,7 @@
     <p class="type_type-1">Or using npm:</p>
     <pre><code>npm install --save backoffice</code></pre>
 
-    <h3 class="type_type-2">Using components</h3>
+    <h3 class="type_type-3">Using components</h3>
     <p class="type_type-1">You need to create your own React application, that
       takes care of routing (at least for now), handling state and so on.</p>
 
@@ -81,8 +132,19 @@
   </div>
 
   <div class="footer">
-    <div class="layout">
-      <p>By Hans</p>
+    <div class="layout layout--wide">
+      <p class="type_type-0">This project is created by drublic.</p>
+
+      <div class="align--clear">
+        <p class="type_type-0 align--left">Backoffice is licensed under
+          <a href="https://github.com/drublic/backoffice/blob/master/LICENSE">
+            MIT</a>.
+        </p>
+        <p class="type_type-0 align--right">Connect:
+          <a href="https://twitter.com/drublic" class="link--padded">Twitter</a>
+          <a href="https://drublic.de/" class="link--padded">Website</a>
+        </p>
+      </div>
     </div>
   </div>
 
