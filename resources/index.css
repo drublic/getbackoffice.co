@@ -2,6 +2,7 @@
 
 :root {
   --color_highlight: #587c98;
+  --color_highlight--dark: #5f455e;
   --color_background--dark: #e0e3e9;
   --color_light: #666;
 }
@@ -49,7 +50,7 @@ a.no-hover {
 
 .layout--padded {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   margin-top: 3rem;
 }
 
@@ -108,7 +109,7 @@ pre {
  * Header
  */
 .header {
-  background: var(--color_highlight);
+  background: linear-gradient(to bottom right, var(--color_highlight), var(--color_highlight--dark));
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 5rem;
@@ -219,6 +220,11 @@ pre {
   background: #fff;
 }
 
+.card:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12),
+              0 8px 8px 0 rgba(0, 0, 0, 0.24);
+}
+
 .card_content {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -228,6 +234,12 @@ pre {
   border-top: 1px solid var(--color_background--dark);
   padding: 0.5rem;
   overflow: hidden;
+}
+
+.card_image {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--color_background--dark);
 }
 
 /**
