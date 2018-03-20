@@ -1,8 +1,8 @@
 @import url("../node_modules/normalize.css/normalize.css");
 
 :root {
-  --color_highlight: #587c98;
-  --color_highlight--dark: #5f455e;
+  --color_highlight: #295b82;
+  --color_highlight--dark: #40203f;
   --color_background--dark: #e0e3e9;
   --color_light: #666;
 }
@@ -197,6 +197,10 @@ pre {
   float: left;
 }
 
+.align--inline-center {
+  text-align: center;
+}
+
 /**
  * Grid
  */
@@ -221,8 +225,8 @@ pre {
 }
 
 .card:hover {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12),
-              0 8px 8px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12),
+              0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .card_content {
@@ -246,7 +250,7 @@ pre {
  * Button
  */
 .button {
-  float: left;
+  display: inline-flex;
   padding: 0.5rem 0.75rem;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -256,4 +260,22 @@ pre {
 
 .button:hover {
   background-color: var(--color_background--dark);
+}
+
+
+.button--primary,
+.button--primary:visited {
+  background-color: var(--color_highlight);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12),
+              0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  transition: filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button--primary:hover {
+  filter: saturate(0.5);
+  border-bottom: 0;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12),
+              0 4px 4px 0 rgba(0, 0, 0, 0.24);
 }
